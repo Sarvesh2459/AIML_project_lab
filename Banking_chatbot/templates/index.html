@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking ChatBot</title>
+</head>
+<body>
+    <h1>Hi {{ name }} I am GPT based chatbot, how may I help you</h1>
+    {% if authorised %}
+    <form action="/classify" method="post">
+        <label for="text">Enter text:</label>
+        <textarea name="text" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Get Response">
+    </form>
+    {% else %}
+    <form action="/get_user" method="post">
+        <label for="name">Enter Name:</label>
+        <textarea name="name" rows="4" cols="50"></textarea><br>
+        <label for="accno">Enter Account Number:</label>
+        <textarea name="accno" rows="4" cols="50"></textarea><br>
+        <label for="auth">Enter Auth Code:</label>
+        <textarea name="auth" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% endif %}
+
+
+    {% if prediction %}
+    <p>Intent: {{ prediction }}</p>
+    {% endif %}
+
+    {% if data %}
+    <p>Response: {{ data }}</p>
+    {% endif %}
+
+</body>
+</html>

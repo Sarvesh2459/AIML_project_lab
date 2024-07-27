@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking ChatBot</title>
+</head>
+<body>
+    <h3>Hi {{ name }} Enter Your Full Name as per Bank Details</h3>
+    <form action="/transfer_money" method="post">
+        <label for="name">Enter Name:</label>
+        <textarea name="name" rows="4" cols="50"></textarea><br>    
+        <input type="hidden" name="data" value="{{ data }}">
+        <input type="hidden" name="amt" value="{{ amt }}">
+        <input type="submit" value="Submit">
+    </form>
+
+
+    {% if data %}
+    <p>To: {{ data }}</p>
+    <p>Amount: {{ amt }}</p>
+    {% endif %}
+
+</body>
+</html>
