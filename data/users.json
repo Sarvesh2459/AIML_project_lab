@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Sarvesh",
+    "account_number": "2",
+    "balance": 30.0,
+    "auth_code_hash": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBdXfs2Stk5v96",
+    "created_at": "2024-01-01T00:00:00",
+    "last_login": null,
+    "is_active": true
+  },
+  {
+    "name": "Basant",
+    "account_number": "5",
+    "balance": 110.0,
+    "auth_code_hash": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBdXfs2Stk5v96",
+    "created_at": "2024-01-01T00:00:00",
+    "last_login": null,
+    "is_active": true
+  },
+  {
+    "name": "Ashmesh",
+    "account_number": "7",
+    "balance": 80.0,
+    "auth_code_hash": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBdXfs2Stk5v96",
+    "created_at": "2024-01-01T00:00:00",
+    "last_login": null,
+    "is_active": true
+  }
+]
